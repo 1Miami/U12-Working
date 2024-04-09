@@ -1,0 +1,45 @@
+body{
+    color: white;
+    background-color: #333;
+    figure { background-color:black;border: 1px solid #ccc;}
+    text-align:center;}
+body
+
+
+h1 {
+    border-width: 0.5px;  
+    border-style: solid; 
+    border-color:  white; 
+    color:rgb(255, 149, 0) ;
+    background-image: url(../img/artworks-j6HVFrTzupWEmPlA-yPGA5Q-t500x500.jpg)
+    
+}
+
+h2 {    
+    color:white ;
+}
+
+p {
+    font-style: italic;
+    color:white ;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+p:first-letter {
+    font-weight: bold;
+    color:aquamarine ;
+}
+
+h1 + p {
+    text-indent: 0;
+}
+
+p:first-line{
+    font-variant: small-caps;
+
+}
+
+:not(p) + p:first-line { font-variant: small-caps; }

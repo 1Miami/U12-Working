@@ -1,0 +1,36 @@
+.container {
+    width: 100%; /* Alterado para ocupar a largura total da tela em dispositivos móveis */
+}
+
+header h1 img {
+    max-width: 80%; /* Reduzido para 80% para se ajustar melhor em dispositivos móveis */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.carrinho {
+    display: none; /* Mantido oculto em dispositivos móveis */
+}
+
+.menu-conteudo {
+    position: static; /* Alterado para posição estática */
+    text-align: center; /* Centraliza o texto */
+}
+
+.menu-opcoes ul li {
+    display: block; /* Alterado para blocos para melhor adaptação em dispositivos móveis */
+    margin: 5px 0; /* Adiciona margem superior e inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+.busca,
+.menu-departamentos,
+.destaque img {
+    margin-right: 0; /* Removida a margem direita */
+    width: 100%; /* Alterado para ocupar a largura total do contêiner pai */
+}
+
+.painel {
+    width: 100%; /* Alterado para ocupar a largura total do contêiner pai */
+    margin: 10px 0; /* Adiciona margem superior e inferior */
+    padding: 10px; /* Adiciona pree*/
+}
