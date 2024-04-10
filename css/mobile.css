@@ -1,36 +1,35 @@
+/* Adaptações para dispositivos móveis */
+
 .container {
-    width: 100%; /* Alterado para ocupar a largura total da tela em dispositivos móveis */
+    width: 100%; /* Ocupa a largura total da tela */
 }
 
 header h1 img {
-    max-width: 80%; /* Reduzido para 80% para se ajustar melhor em dispositivos móveis */
+    max-width: 100%; /* Imagem ocupa a largura total do contêiner pai */
     height: auto; /* Mantém a proporção da imagem */
 }
 
-.carrinho {
-    display: none; /* Mantido oculto em dispositivos móveis */
-}
-
-.menu-conteudo {
-    position: static; /* Alterado para posição estática */
-    text-align: center; /* Centraliza o texto */
+.menu-opcoes ul {
+    text-align: center; /* Centraliza os itens do menu */
 }
 
 .menu-opcoes ul li {
-    display: block; /* Alterado para blocos para melhor adaptação em dispositivos móveis */
-    margin: 5px 0; /* Adiciona margem superior e inferior */
-    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Alterado para ficar em linha */
+    margin: 0 10px; /* Adiciona espaçamento entre os itens */
 }
 
-.busca,
-.menu-departamentos,
+.social li {
+    float: none; /* Remove o float para alinhar os ícones horizontalmente */
+    display: inline-block; /* Mantém os ícones em linha */
+    margin-right: 10px; /* Adiciona espaçamento entre os ícones */
+}
+
 .destaque img {
-    margin-right: 0; /* Removida a margem direita */
-    width: 100%; /* Alterado para ocupar a largura total do contêiner pai */
+    width: 100%; /* Imagem de destaque ocupa a largura total do contêiner pai */
 }
 
 .painel {
-    width: 100%; /* Alterado para ocupar a largura total do contêiner pai */
+    width: 100%; /* Painel ocupa a largura total do contêiner pai */
     margin: 10px 0; /* Adiciona margem superior e inferior */
-    padding: 10px; /* Adiciona pree*/
+    padding: 10px; /* Adiciona preenchimento interno */
 }
