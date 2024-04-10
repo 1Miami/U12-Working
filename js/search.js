@@ -7,7 +7,7 @@ function validaBusca() {
 
 document.querySelector('#form-busca').onsubmit = validaBusca;
 
-var banners = ["./img/roxo.jfif", "./img/mimis.png"];
+var banners = ["./img/Roxo.jfif", "./img/mimis.png"];
 var bannerAtual = 0;
 
 function trocaBanner() {
