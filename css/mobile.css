@@ -1,35 +1,13 @@
-/* Adaptações para dispositivos móveis */
+.container { width: 96%; }
 
-.container {
-    width: 100%; /* Ocupa a largura total da tela */
-}
+header h1 img { max-width: 50%; }
+.carrinho { display: none; }
+.menu-conteudo { position: static; text-align: center; } 
 
-header h1 img {
-    max-width: 100%; /* Imagem ocupa a largura total do contêiner pai */
-    height: auto; /* Mantém a proporção da imagem */
-}
+.menu-opcoes ul li { display: inline-block; margin: 5px; }
 
-.menu-opcoes ul {
-    text-align: center; /* Centraliza os itens do menu */
-}
+.busca, .menu-departamentos, .destaque img { margin-right: 0; width: 100%; }
 
-.menu-opcoes ul li {
-    display: inline-block; /* Alterado para ficar em linha */
-    margin: 0 10px; /* Adiciona espaçamento entre os itens */
-}
-
-.social li {
-    float: none; /* Remove o float para alinhar os ícones horizontalmente */
-    display: inline-block; /* Mantém os ícones em linha */
-    margin-right: 10px; /* Adiciona espaçamento entre os ícones */
-}
-
-.destaque img {
-    width: 100%; /* Imagem de destaque ocupa a largura total do contêiner pai */
-}
-
-.painel {
-    width: 100%; /* Painel ocupa a largura total do contêiner pai */
-    margin: 10px 0; /* Adiciona margem superior e inferior */
-    padding: 10px; /* Adiciona preenchimento interno */
-}
+.painel { width: auto; }
+.painel li { width: 30%; }
+.painel img { width: 100%; }

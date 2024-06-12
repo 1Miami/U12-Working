@@ -1,0 +1,178 @@
+body {
+    background-image: url(../img/jj.png);
+    color: 333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+
+}
+
+h1 {}
+
+header {
+
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    
+}
+
+.info container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carrinho {
+
+    background: url(../img/shopping-cart.png) no-repeat top right;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    background-size: contain;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+
+}
+
+.menu-opcoes {
+    position: absolute;
+    top: 85px;
+    right: 0;
+}
+
+.menu-opcoes ul {
+    font-size: 15px;
+
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+
+}
+
+.menu-opcoes a {
+    color: #003366;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+    
+}
+.busca, .menu-conteúdo {
+    background-color: #dcdcdc; font-weight: bold; text-transform: uppercase;
+    margin-right: 10px;width: 230px; float: left; 
+}
+
+.busca h2, .busca form, .menu-conteudo h2 {
+    margin: 10px;
+}
+.menu-conteudo{
+    width: 230px;
+    background-color: rgb(148, 148, 148);
+}
+.menu-conteudo li {
+    background-color: white; 
+    margin-bottom: 1px;
+     padding: 5px 10px;
+}
+.menu-conteudo a {
+    color: #333333; text-decoration: none;
+}
+.menu-conteudo { 
+    clear: left; 
+}
+            
+.busca input{
+    vertical-align: middle ;
+}
+.busca input[type=search] {
+     width: 170px;
+    }
+
+    .destaque { 
+        margin-top: 10px; 
+    } 
+.menu-conteudo {
+     margin-top: 10px; padding-bottom: 10px; 
+    }
+
+    .painel { 
+        margin: 10px 0; 
+        padding: 10px; 
+        width: 445px; 
+    }
+    .aula1 { 
+        float: left; 
+        background-color: #f5dcdc; 
+    }
+    .aula2 { 
+        float: right; 
+        background-color: #dcdcf5;
+    }
+    .painel li { 
+        display: inline-block; 
+        vertical-align: top; 
+        width: 140px;
+         margin: 2px; 
+        padding-bottom: 10px; 
+    }
+    .painel h2 {
+         font-size: 24px; 
+         font-weight: bold; 
+         text-transform: uppercase; 
+         margin-bottom: 10px; 
+} 
+    .painel a {
+         color: #333; font-size: 14px; text-align: center; text-decoration: none; }
+
+footer{
+    margin-top: 485px;
+    background-color: rgb(241, 115, 12);
+    clear: both;
+    padding-bottom: 100px;
+}
+
+.social a{
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+    margin-top: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.social li{
+    float: left;
+    padding-left: 210px;
+}
+.social{
+    position: absolute;
+}
+
+.social a[href*="https://www.facebook.com"]{
+    background-image: url(../img/facebook.png);
+    background-size: contain;
+   
+}
+.social a[href*="https://github.com/FelipeButtinger/EntregasFront"]{
+    background-image: url(../img/github.png);
+    background-size: contain;
+    
+}
+.social a[href*="https://www.instagram.com"]{
+    background-image: url(../img/instagram.png);
+    background-size: contain;
+    
+    
+}
+.logo-rodape{
+    height: 100px;
+    padding-left: 380px;
+   
+}
+
+
+
