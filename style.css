@@ -1,0 +1,40 @@
+/* style.css */
+/* estilos para tela desktop */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* estilos para tela mobile */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-right: 0;
+    }
+    nav a {
+        font-size: 18px;
+    }
+}
