@@ -1,3 +1,92 @@
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 8px) {
+    .push {
+        height: 0;
+        min-height: 100vh;
+      }
+      .footer-mobile:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .footer-mobile {
+        /* outras propriedades */
+        margin-top: -50px; /* altura do footer */
+      }
+      
+    /* Header */
+    .header-mobile {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    /* Main */
+    .main-mobile {
+      padding: 20px;
+    }
+    
+    /* Footer */
+    .footer-mobile {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    /* Container */
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    /* Painel */
+    .painel {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    
+    /* Busca */
+    .busca {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    
+    /* Menu-opcoes */
+    .menu-opcoes {
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+    
+    /* Social */
+    .social {
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+  }
+  /* Estilos para dispositivos móveis em landscape */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    /* Container */
+    .container {
+      width: 80%;
+      padding: 10px;
+    }
+    
+    /* Painel */
+    .painel {
+      width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    
+    /* Busca */
+    .busca {
+      width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+  }
 body { 
     background-image: url("../img/branch_minimalism_bw_125024_3840x2400.jpg");
     background-size: contain;
@@ -53,8 +142,9 @@ header {
 }
 
 .container {
-    margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .busca, .menu-conteudo {
