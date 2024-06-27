@@ -120,7 +120,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 80px) {
   .pokedex {
     width: 480px; /* Largura menor para telas menores */
   }
