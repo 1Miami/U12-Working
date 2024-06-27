@@ -1,5 +1,5 @@
 /* Estilos para dispositivos móveis */
-@media only screen and (max-width: 8px) {
+@media only screen and (max-width: 6px) {
     .push {
         height: 0;
         min-height: 100vh;
@@ -110,6 +110,7 @@ header {
     margin-left: auto;
 }
 
+/* Apenas aparecencia e imagem do carrinho */
 .carrinho { 
     background: url(../img/carrinho.png) no-repeat top right;
     font-size: 14px;
