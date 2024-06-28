@@ -18,13 +18,8 @@ async function fetchPokemon() {
             const pokemonImagem = document.getElementById('pokemon-image');
             pokemonImagem.src = pokemon.sprites.front_default;
             pokemonImagem.style.display = 'block';
-            const nomeCapitalizado = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-            document.getElementById('pokemon-nome').innerText = `Nome: ${nomeCapitalizado}`;
-
-            const tiposCapitalizados = pokemon.types.map(typeInfo => typeInfo.type.name.charAt(0).toUpperCase() + typeInfo.type.name.slice(1));
-            document.getElementById('pokemon-tipos').innerText = `Tipos: ${tiposCapitalizados.join(', ')}`;
-
-
+            document.getElementById('pokemon-nome').innerText = `Nome: ${pokemon.name}`;
+            document.getElementById('pokemon-tipos').innerText = `Tipos: ${pokemon.types.map(typeInfo => typeInfo.type.name).join(', ')}`;
             document.getElementById('pokemon-peso').innerText = `Peso: ${pokemon.weight} kg`;
             document.getElementById('pokemon-altura').innerText = `Altura: ${pokemon.height} m`;
 
@@ -46,5 +41,16 @@ async function fetchPokemon() {
             console.error('Erro ao buscar informações do Pokémon:', error);
         }
     }
-}
-  
+   
+    let musicaFundo = true;
+    toggleMusic();
+
+    function toggleMusic() {
+        const music = document.getElementById('background-music');
+
+            music.play();
+            musicaFundo = true;
+            
+        }
+    }
+
