@@ -1,0 +1,167 @@
+/* Estilos globais */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+.pokemon-details {
+    margin-right: 25px;
+    padding: 80px; /* Espaçamento interno */
+  }
+
+/* Estilos para o corpo da página */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../img/background.jpg'); /* Define a imagem de fundo */
+  background-repeat: repeat-x; /* Repetir horizontalmente */
+  background-size: cover; /* Cobrir todo o espaço disponível */
+  background-attachment: fixed; /* Fixar a imagem de fundo */
+  height: 100vh; /* Altura total da viewport */
+  display: flex; /* Usar flexbox para posicionamento central */
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+}
+
+/* Estilos para a Pokédex */
+.pokedex {
+  position: relative;
+  width: 425px; /* Largura fixa da Pokédex em pixels */
+  height: 637px; /* Altura fixa da Pokédex em pixels */
+  background-image: url('../img/pokedex.png'); /* Imagem de fundo da Pokédex */
+  background-size: cover; /* Cobrir todo o espaço */
+  background-repeat: no-repeat; /* Não repetir */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para a área de display dentro da Pokédex */
+.display {
+  position: absolute;
+  top: 100px; /* Distância do topo */
+  left: 50%; /* Centralizado horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centralização exata */
+  width: 325px; /* Largura da área de display em pixels */
+  height: 425px; /* Altura da área de display em pixels */
+  background-color: rgba(255, 255, 255, 0); /* Fundo transparente */
+  padding: 20px; /* Espaçamento interno */
+  display: flex; /* Usar flexbox para layout */
+  flex-direction: column; /* Coluna para conteúdo alinhado verticalmente */
+  align-items: center; /* Centralizar itens */
+  justify-content: space-between; /* Espaçamento uniforme entre itens */
+}
+
+/* Estilos para informações do Pokémon */
+#pokemon-info {
+  text-align: center; /* Alinhar texto ao centro */
+  margin-bottom: 20px; /* Margem inferior */
+  font-size: 14px; /* Tamanho da fonte */
+  min-height: 250px; /* Altura mínima */
+}
+
+/* Estilos para a imagem do Pokémon */
+#pokemon-image {
+  width: 150px; /* Largura da imagem */
+  height: 130px; /* Altura da imagem */
+  display: none; /* Inicialmente escondida */
+  margin-top: 80px; /* Margem superior */
+  margin-left: 50px; /* Margem esquerda */
+}
+
+/* Estilos para o container de pesquisa */
+.search-container {
+  display: flex; /* Usar flexbox para layout */
+  align-items: center; /* Centralizar itens verticalmente */
+  justify-content: center; /* Centralizar itens horizontalmente */
+  margin-top: 150px; /* Margem superior */
+}
+
+/* Estilos para input do tipo número */
+input[type="number"] {
+  flex: 1; /* Expandir conforme necessário */
+  padding: 8px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda com cor */
+  border-radius: 5px; /* Borda arredondada */
+  background-color: #333; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  margin-right: 10px; /* Margem direita */
+}
+
+/* Estilos para o botão */
+button {
+  padding: 8px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Borda arredondada */
+  background-color: #444; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor ao passar */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para hover no botão */
+button:hover {
+  background-color: #555; /* Cor de fundo ao passar */
+}
+
+/* Media queries para diferentes tamanhos de tela */
+
+@media screen and (max-width: 68px) {
+  .pokedex {
+    width: 68px; /* Ajuste da largura para telas menores */
+  }
+  
+  .display {
+    left: 0; /* Alinhamento à esquerda */
+    width: 768px; /* Largura total */
+  }
+  
+  #pokemon-image {
+    margin-top: 40px; /* Ajuste da margem superior */
+  }
+  
+  .search-container {
+    margin-top: 80px; /* Ajuste da margem superior */
+  }
+}
+
+@media screen and (max-width: 80px) {
+  .pokedex {
+    width: 480px; /* Largura menor para telas menores */
+  }
+  
+  .display {
+    padding: 10px; /* Espaçamento interno menor */
+  }
+  
+  #pokemon-image {
+    width: 100px; /* Largura menor da imagem */
+    height: 80px; /* Altura menor da imagem */
+  }
+  
+  .search-container {
+    margin-top: 60px; /* Ajuste da margem superior */
+  }
+  
+  .search-wrapper {
+    position: absolute; /* Posicionamento absoluto */
+    top: 95%; /* Distância do topo */
+    left: 75%; /* Posicionamento à direita */
+    transform: translate(-50%, -50%); /* Centralização exata */
+    text-align: center; /* Alinhar texto ao centro */
+  }
+  
+  #pokemon-image {
+    width: 150px; /* Largura da imagem */
+    height: 130px; /* Altura da imagem */
+    display: none; /* Inicialmente escondida */
+    margin-top: 80px; /* Margem superior */
+    margin-left: 485px; /* Margem esquerda */
+  }
+  
+  .pokemon-details {
+    margin-left: 295px; /* Margem à esquerda */
+    padding: 88px; /* Espaçamento interno */
+    
+  }
+}
