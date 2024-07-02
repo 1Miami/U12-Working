@@ -353,4 +353,130 @@ footer .container{
         transform: scale(1.2) rotate(-3deg); 
         }
 
-        
+    @media only screen and (max-width: 936px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu-opcoes {
+        text-align: center;
+    }
+
+    .menu-opcoes ul {
+        margin: 0;
+    }
+
+    .menu-opcoes ul li {
+        display: block;
+        margin: -10px 40px 30px 40px;
+    }
+}
+
+@media only screen and (max-width: 724px) and (orientation: landscape) {
+    .container {
+        width: 60%; /* Reduz a largura do container principal para 60% */
+    }
+    
+    .painel.aula2 {
+        width: 100%; /* Ocupa toda a largura disponível do container */
+        margin-bottom: 20px; /* Espaço abaixo do painel */
+        margin-right: 10px; /* Espaço à direita do painel */
+        padding-bottom: 20px; /* Adiciona um preenchimento inferior de 20px */
+    }
+    
+    .painel.aula2 ol {
+        padding-left: 0; /* Remove o preenchimento à esquerda da lista */
+    }
+    
+    .painel.aula2 li {
+        width: 100%; /* Faz com que os itens ocupem toda a largura disponível */
+        padding: 10px 0; /* Adiciona preenchimento superior e inferior de 10px */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .painel.aula2 figure {
+        margin: 0 auto; /* Centraliza a figura dentro do seu contêiner */
+    }
+    
+    .destaque img {
+        width: 100%; /* Ajusta a imagem de destaque para ocupar toda a largura disponível */
+        height: auto; /* Mantém a proporção da altura */
+    }
+}
+
+
+@media only screen and (max-width: 1px) {
+    .painel {
+        width: 45%; /* Largura dos painéis para ocupar quase metade da largura */
+        margin-right: 5%; /* Espaço entre os painéis */        
+        display: block; /* Mudança para layout de bloco */
+    }
+
+    .painel {
+        width: 100%; /* Painéis ocupam toda a largura disponível */
+        margin-bottom: 20px; /* Espaço abaixo de cada painel */
+    }
+
+    .painel {
+        width: 34%;
+        margin-bottom: 10px;
+        margin-right: 100px
+    }
+
+    .painel h2 {
+        text-align: center;
+    }
+
+    .painel ol {
+        padding: 0;
+    }
+
+    .painel li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .painel figure {
+        text-align: center;
+    }
+
+    .painel figcaption {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}
+/* Estilos para dispositivos de tela grande (computadores) */
+@media only screen and (min-width: 1640px) {
+    /* Posiciona a busca no topo esquerdo */
+    .busca {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #dcdcdc;
+        padding: 10px;
+        width: 250px;
+    }
+
+    /* Posiciona o menu de conteúdo ao lado da busca */
+    .menu-conteudo {
+        position: absolute;
+        top: 80px; /* Espaço abaixo da busca */
+        left: 0;
+        background-color: #dcdcdc;
+        padding: 10px;
+        width: 250px;
+    }
+    
+}
