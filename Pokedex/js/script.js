@@ -1,29 +1,27 @@
 /**
-         * Função assíncrona para buscar e exibir informações de um Pokémon com base no ID fornecido.
-         */
+ * Função assíncrona para buscar e exibir informações de um Pokémon com base no ID fornecido.
+ */
 async function fetchPokemon() {
-    // -- Obter o ID do pokemon pelo Usuario -->
-
     const pokemonId = document.getElementById('pokemon-id').value;
 
-    // -- Ação para verificar o ID, se é ou não compativel -->
     if (pokemonId) {
         try {
-            // -- Procurando na API -->
             const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
-            // -- Conversão para JSON -->
             const pokemon = await resposta.json();
 
-            // -- Exibe as informações do Pokémon na página -->
             const pokemonImagem = document.getElementById('pokemon-image');
             pokemonImagem.src = pokemon.sprites.front_default;
             pokemonImagem.style.display = 'block';
             document.getElementById('pokemon-nome').innerText = `Nome: ${pokemon.name}`;
             document.getElementById('pokemon-tipos').innerText = `Tipos: ${pokemon.types.map(typeInfo => typeInfo.type.name).join(', ')}`;
-            document.getElementById('pokemon-peso').innerText = `Peso: ${pokemon.weight} kg`;
-            document.getElementById('pokemon-altura').innerText = `Altura: ${pokemon.height} m`;
 
-            // -- Reproduz o som do Pokémon, se não for encotrado será avisado. -->
+            // Convertendo peso e altura para exibição correta
+            const pesoEmKg = pokemon.weight / 10; // convertendo de decigramas para quilogramas
+            const alturaEmMetros = pokemon.height / 10; // convertendo de decímetros para metros
+
+            document.getElementById('pokemon-peso').innerText = `Peso: ${pesoEmKg} kg`;
+            document.getElementById('pokemon-altura').innerText = `Altura: ${alturaEmMetros} m`;
+
             if (pokemon.cries && pokemon.cries.latest) {
                 const pokemonSom = document.getElementById('pokemon-som');
                 pokemonSom.src = pokemon.cries.latest;
@@ -33,24 +31,12 @@ async function fetchPokemon() {
                 pokemonSom.src = pokemon.cries.legacy;
                 pokemonSom.play();
             } else {
-                console.log('Não encontrado.');
+                console.log('Som não encontrado para este Pokémon.');
             }
 
         } catch (error) {
-            // -- Erros de informacoes ou JSON -->
             console.error('Erro ao buscar informações do Pokémon:', error);
         }
     }
-   
-    let musicaFundo = true;
-    toggleMusic();
-
-    function toggleMusic() {
-        const music = document.getElementById('background-music');
-
-            music.play();
-            musicaFundo = true;
-            
-        }
-    }
+}
 
